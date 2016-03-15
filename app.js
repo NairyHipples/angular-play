@@ -1,18 +1,18 @@
 var demoApp = angular.module('demoApp', ['ngRoute']);
-// demoApp.config(['$routeProvider', '$locationProvider',
-//   function($routeProvider, $locationProvider) {
-//
-//   $routeProvider
-//     .when('/', {
-//       controller: 'SimpleController',
-//       templateUrl: 'view1.html'
-//     })
-//     .when('/partial2', {
-//       controller: 'SimpleController',
-//       templateUrl: 'view2.html'
-//     })
-//     .otherwise({ redirectTo: '/' });
-// }]);
+demoApp.config(['$routeProvider', '$locationProvider',
+  function($routeProvider, $locationProvider) {
+
+  $routeProvider
+    .when('/', {
+      controller: 'SimpleController',
+      templateUrl: 'view1.html'
+    })
+    .when('/partial2', {
+      controller: 'SimpleController',
+      templateUrl: 'view2.html'
+    })
+    .otherwise({ redirectTo: '/' });
+}]);
 
 var controllers = {};
 controllers.SimpleController = function($scope) {
