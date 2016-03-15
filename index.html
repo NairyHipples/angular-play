@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html ng-app="demoApp">
+<html data-ng-app="demoApp">
   <head>
     <meta charset="utf-8">
     <title>AngularJS Play</title>
   </head>
   <body>
-    <div ng-controller="SimpleController">
 
-      Name:
-      <br>
-      <input type="text" ng-model="name"> {{ name }}
-      <br>
-      <ul>
-        <li ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name }} - {{ cust.city }}</li>
-      </ul>
+    <div>
+      <div data-ng-view>
+
+      </div>
     </div>
-
-
-
 
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- AngularJS route -->
+    <script src="angular-route.min.js"></script>
     <!-- AngularJS -->
     <script src="angular.min.js"></script>
     <!-- My AngularJS file -->
