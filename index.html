@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Play</title>
+  </head>
+  <body ng-init="names=['John Smith', 'John Doe',  'Jane Doe']">
+    Name:
+    <br>
+    <input type="text" ng-model="name"> {{ name }}
+    <br>
+    <ul>
+      <li ng-repeat="personName in names">{{ personName }}</li>
+    </ul>
+
+
+
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- AngularJS -->
+    <script src="angular.min.js"></script>
+    <!-- My AngularJS file -->
+    <script src="app.js"></script>
+  </body>
+</html>
