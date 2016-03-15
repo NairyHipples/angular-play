@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <title>AngularJS Play</title>
   </head>
-  <body ng-init="names=['John Smith', 'John Doe',  'Jane Doe']">
-    Name:
-    <br>
-    <input type="text" ng-model="name"> {{ name }}
-    <br>
-    <ul>
-      <li ng-repeat="personName in names | filter:name">{{ personName }}</li>
-    </ul>
+  <body>
+    <div ng-controller="SimpleController">
+
+      Name:
+      <br>
+      <input type="text" ng-model="name"> {{ name }}
+      <br>
+      <ul>
+        <li ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name }} - {{ cust.city }}</li>
+      </ul>
+    </div>
 
 
 
