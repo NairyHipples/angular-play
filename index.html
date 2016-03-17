@@ -2,9 +2,117 @@
 <html data-ng-app="demoApp">
   <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <!-- For rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" media="screen">
     <title>AngularJS Play</title>
   </head>
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+  <div class="container">
+   <div class="navbar-header">
+    <a class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </a>
+    <a class="navbar-brand" href="#">Project name</a>
+   </div>
+   <div id="slidemenu">
+
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="search" placeholder="search" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+    <ul class="nav navbar-nav">
+     <li class="active"><a href="#">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+       <li><a href="#">Action</a></li>
+       <li><a href="#">Another action</a></li>
+       <li><a href="#">Something else here</a></li>
+       <li class="divider"></li>
+       <li class="dropdown-header">Nav header</li>
+       <li><a href="#">Separated link</a></li>
+       <li><a href="#">One more separated link</a></li>
+       <li><a href="#">Action</a></li>
+       <li><a href="#">Another action</a></li>
+       <li><a href="#">Something else here</a></li>
+       <li class="divider"></li>
+       <li class="dropdown-header">Nav header</li>
+       <li><a href="#">Separated link</a></li>
+       <li><a href="#">One more separated link</a></li>
+       <li><a href="#">Action</a></li>
+       <li><a href="#">Another action</a></li>
+       <li><a href="#">Something else here</a></li>
+       <li class="divider"></li>
+       <li class="dropdown-header">Nav header</li>
+       <li><a href="#">Separated link test long title goes here</a></li>
+       <li><a href="#">One more separated link</a></li>
+      </ul>
+     </li>
+    </ul>
+
+   </div>
+  </div>
+ </div>
+
+
+  <!--wrap the page content do not style this-->
+ <div id="page-content">
+
+  <div class="container" >
+    <h1 class="no-margin-top">Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+
+        <p class="lead">Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+
+
+
+   </div>
+  <!-- /.container -->
+
+ </div>
+ <!-- /#page-content -->
+
 
     <div>
       <h1>poop</h1>
@@ -13,12 +121,17 @@
       </div>
     </div>
 
-
+    <!-- Latest minified jQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <!-- AngularJS route -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
     <!-- My AngularJS file -->
     <script src="app.js"></script>
+    <!-- My js file -->
+    <script src="main.js"></script>
   </body>
 </html>
